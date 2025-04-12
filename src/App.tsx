@@ -23,11 +23,11 @@ export function App() {
     };
 
     const createRows = (count: number) => {
+        startTiming();
         const newRows: RowData[] = [];
         for (let i = 0; i < count; i++) {
             newRows.push({ id: nextId.current++, label: generateRandomLabel() });
         }
-        startTiming();
         setRows(newRows);
     };
 
