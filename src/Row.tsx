@@ -17,9 +17,7 @@ export function Row({ rowData, onSelectRow, onDeleteRow }: RowProps) {
                 <a onClick={() => onSelectRow(rowData.id)}>{rowData.label}</a>
             </td>
             <td className="col-md-1">
-                <a onClick={() => onDeleteRow(rowData.id)}>
-                    <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                </a>
+                <a onClick={() => onDeleteRow(rowData.id)}>❌</a>
             </td>
             <td className="col-md-6"></td>
         </tr>
